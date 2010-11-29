@@ -25,6 +25,8 @@ bundle exec rake
 
 Please note the @%build_dir%@ and @%project_dir%@ special variables. If used in step, they will be replaced with appropriate paths.
 
+p(tip). When building web app, ensure your production data is safe. Use separate @database.yml@ config file with only test environment entry. That way you'll make sure other databases are not accessed during build process.
+
 h3(#vcs). Version Control
 
 **VCS Source** is a path to your repository. It can either be a local path (like @/my/git/path@) if your repository is locally visible by BigTuna app, or remote entry (like @your.host:repo.git@). In both cases it _has to be accessible_ by the user which runs your BigTuna application.

@@ -6,6 +6,32 @@ h2(#vcs). VCS
 
 We now support Git vcs out of the box, but it takes very little effort to write your own vcs support. Please see @extras/big_tuna/vcs/git.rb@, write your own handler and send us a patch (probably with tests!). We will gladly merge it.
 
+# Provide a user--displayed VCS name
+@NAME = "My VCS"@
+# Provide database--safe vcs name
+@VALUE = "my_vcs"@
+# When overriding the initializer, call @super(source, branch)@ to set basic values
+# Implement @#head_info@ instance method which should return an array of two elements @[info, command]@
+** @info@ -- @Hash@ of fetched commit data:
+*** @:commit@ -- commit hash
+*** @:author@ -- commit author
+*** @:email@ -- commit email
+*** @:committed_at@ -- @Time@ object indicating time commit was created
+*** @:commit_message@ -- commit message
+** @command@ -- @String@ with shell command used to get data
+# Implement @#clone(where_to)@ instance method which should clone the repository to a directory specified by @where_to@. The directory may have to be created
+
 h2(#hook). Hooks
 
 Currently there is a @Mailer@ hook for you. If you want support for custom services please check @extras/big_tuna/hooks/mailer.rb@ and create a new hook based on it.
+
+# Provide a unique database--safe hook name
+@NAME = "mailer"@
+# List available configuration entries -- you can use them later in your hook
+@CONFIG_FIELDS = ["recipients"]@
+# Define methods you need
+** @self.build_passed(build, config)@
+** @self.build_fixed(build, config)@
+** @self.build_still_fails(build, config)@
+** @self.build_finished(build, config)@
+** @self.build_failed(build, config)@
