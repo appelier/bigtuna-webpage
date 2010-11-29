@@ -24,3 +24,5 @@ bc. server {
   root /big_tuna/root/public;
   passenger_enabled on;
 }
+
+After installing read the "configuration section":configuration.html.

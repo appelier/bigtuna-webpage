@@ -45,4 +45,4 @@ Hooks are small code parts that can be executed on various project actions. Curr
 
 Currently there is a @Mailer@ hook available, which allows you to send emails to specified recipients.
 
-If you would like to contribute, check "how to write your own hook":extending.html#hook
+If you would like to contribute learn "how to write your own hook":extending.html#hook
