@@ -18,6 +18,4 @@ rails s
 
 Check out our "tutorial for setting up BigTuna with Nginx":installation.html#nginx
 
-h2. Configuration
-
-Check out @config/email.yml.sample@ for email setup.
+See the "configuration section":configuration.html on how to add a new project.
