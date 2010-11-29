@@ -17,7 +17,7 @@ Go to BigTuna root. Click "New project" link on the menu.
 
 h3(#steps). Steps
 
-Steps should be newline-separated shell commands which will be executed in order by our builder. Sample Rails 3 step entry might look like this:
+Steps should be newline--separated shell commands which will be executed in order by our builder. Sample Rails 3 step entry might look like this:
 
 bc. bundle install --path=%project_dir%/bundle --deployment
 cp /project/shared/database.yml.sample %build_dir%/config/database.yml
