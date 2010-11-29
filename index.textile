@@ -6,6 +6,12 @@ h2. What is BigTuna?
 
 BigTuna is continuous integration software. "Martin Fowler's page":http://www.martinfowler.com/articles/continuousIntegration.html describes what is continuous integration.
 
+h2. Why use BigTuna and not "other ci software"?
+
+There are other similar projects, but in our opinion none of them is good enough. BigTuna aims at simplicity but not for sake of usability. For example we allow multiple projects in one BigTuna instance, as opposed to __CIJoe__. It is also designed to be extendible to certain extent.
+
+BigTuna tries to be project--agnostic, meaning you can build anything that consists of shell commands and returns 0 exit code on success.
+
 h2. Installation
 
 BigTuna is built ontop of Rails 3 framework. Currently it's been tested with Postgres as database backend, but the database scheme is quite simple and there should be no problems running it on SQLite.
