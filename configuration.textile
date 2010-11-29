@@ -1,0 +1,44 @@
+---
+layout: default
+title: Configuration
+---
+h2. Setting up project
+
+Go to BigTuna root. Click "New project" link on the menu.
+
+* **Name** should be a globally unique project name like "My Project master"
+* **Steps** newline-separated build steps; see "steps section":#steps for more details
+* **Vcs type** version control software you are using. Git is the only choice now, but you can "contribute with your own VCS handler":extending.html#vcs
+* **Vcs source** the source to version control repository. Read the "VCS section":#vcs for info
+* **Vcs branch** the branch to work on
+* **Max builds** BigTuna will keep only latest _max_builds_ builds (default: 10)
+* **Hooks** Connect various hooks to project builder. See "hooks section":#hooks for more information
+* **Hook name** Set up unique hook name and POST to @http://bigtuna.domain/hooks/build/:name@ to build the app
+
+h3(#steps). Steps
+
+Steps should be newline-separated shell commands which will be executed in order by our builder. Sample Rails 3 step entry might look like this:
+
+bc. bundle install --path=%project_dir%/bundle --deployment
+cp /project/shared/database.yml.sample %build_dir%/config/database.yml
+bundle exec rake
+
+Please note the @%build_dir%@ and @%project_dir%@ special variables. If used in step, they will be replaced with appropriate paths.
+
+h3(#vcs). Version Control
+
+**VCS Source** is a path to your repository. It can either be a local path (like @/my/git/path@) if your repository is locally visible by BigTuna app, or remote entry (like @your.host:repo.git@). In both cases it _has to be accessible_ by the user which runs your BigTuna application.
+The remote entry will probably require a passwordless login, so an @id_{r|d}sa.pub@ key has to be present on the remote site.
+
+h3(#hooks). Hooks
+
+Hooks are small code parts that can be executed on various project actions. Currently supported actions are:
+* @build_passed(build)@ -- invoked when @build@ was successfully ran
+* @build_fixed(build)@ -- invoked when @build@ fixed the failing project
+* @build_still_fails(build)@ -- invoked when @build@ didn't fix the project
+* @build_finished(build)@ -- invoked for every @build@ ran
+* @build_failed(build)@ -- invoked when @build@ failed a valid project
+
+Currently there is a @Mailer@ hook available, which allows you to send emails to specified recipients.
+
+If you would like to contribute, check "how to write your own hook":extending.html#hook

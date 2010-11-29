@@ -1,0 +1,11 @@
+---
+layout: default
+title: Extending
+---
+h2(#vcs). VCS
+
+We now support Git vcs out of the box, but it takes very little effort to write your own vcs support. Please see @extras/big_tuna/vcs/git.rb@, write your own handler and send us a patch (probably with tests!). We will gladly merge it.
+
+h2(#hook). Hooks
+
+Currently there is a @Mailer@ hook for you. If you want support for custom services please check @extras/big_tuna/hooks/mailer.rb@ and create a new hook based on it.

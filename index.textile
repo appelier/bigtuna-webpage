@@ -1,9 +1,23 @@
 ---
 layout: default
-title: Home
+title: Continuous Integration
 ---
-h1. BigTuna -- we ain't small fish.
-
 h2. What is BigTuna?
 
-BigTuna is continuous integration software.
+BigTuna is continuous integration software. "Martin Fowler's page":http://www.martinfowler.com/articles/continuousIntegration.html describes what is continuous integration.
+
+h2. Installation
+
+BigTuna is built ontop of Rails 3 framework. Currently it's been tested with Postgres as database backend, but the database scheme is quite simple and there should be no problems running it on SQLite.
+
+For simple development setup, go with standard Rails procedure.
+
+bc. git clone git@github.com:appelier/bigtuna.git
+rake db:schema:load
+rails s
+
+Check out our "tutorial for setting up BigTuna with Nginx":installation.html#nginx
+
+h2. Configuration
+
+Check out @config/email.yml.sample@ for email setup.
