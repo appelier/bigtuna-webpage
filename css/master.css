@@ -5,6 +5,7 @@ ol                             { list-style: decimal outside; margin-left: 20px;
 ul                             { list-style: square inside; padding-left: 20px; }
 pre                            { margin: 20px; }
 p                              { margin: 10px 0; }
+h1                             { padding-bottom: 30px; }
 
 #main                          { margin: 0 auto; position:relative; width: 1000px; margin-top: 20px; }
 #header                        { padding: 15px; width: 800px; margin: 0 auto; margin-top: 10px; margin-bottom: -60px; text-align: center; }
