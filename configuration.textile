@@ -33,11 +33,13 @@ The remote entry will probably require a passwordless login, so an @id_{r|d}sa.p
 h3(#hooks). Hooks
 
 Hooks are small code parts that can be executed on various project actions. Currently supported actions are:
-* @build_passed(build)@ -- invoked when @build@ was successfully ran
-* @build_fixed(build)@ -- invoked when @build@ fixed the failing project
-* @build_still_fails(build)@ -- invoked when @build@ didn't fix the project
-* @build_finished(build)@ -- invoked for every @build@ ran
-* @build_failed(build)@ -- invoked when @build@ failed a valid project
+* @build_passed(build, config)@ -- invoked when @build@ was successfully ran
+* @build_fixed(build, config)@ -- invoked when @build@ fixed the failing project
+* @build_still_fails(build, config)@ -- invoked when @build@ didn't fix the project
+* @build_finished(build, config)@ -- invoked for every @build@ ran
+* @build_failed(build, config)@ -- invoked when @build@ failed a valid project
+
+@config@ in all hooks is a hash of configuration values. You can use it in hook actions to provide custom behaviour based on configuration provided by user.
 
 Currently there is a @Mailer@ hook available, which allows you to send emails to specified recipients.
 
