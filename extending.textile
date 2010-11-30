@@ -4,14 +4,14 @@ title: Extending
 ---
 h2(#vcs). VCS
 
-We now support Git vcs out of the box, but it takes very little effort to write your own vcs support. Please see @extras/big_tuna/vcs/git.rb@, write your own handler and send us a patch (probably with tests!). We will gladly merge it.
+We now support Git vcs out of the box, but it takes very little effort to write your own vcs support. Please see @extras/big_tuna/vcs/git.rb@, write your own handler and send us a pull request (with tests!). We will gladly merge it.
 
 # Provide a user--displayed VCS name
 @NAME = "My VCS"@
-# Provide database--safe vcs name
+# Provide a database--safe vcs name
 @VALUE = "my_vcs"@
 # When overriding the initializer, call @super(source, branch)@ to set basic values
-# Implement @#head_info@ instance method which should return an array of two elements @[info, command]@
+# Implement the @#head_info@ instance method which should return an array of two elements @[info, command]@
 ** @info@ -- @Hash@ of fetched commit data:
 *** @:commit@ -- commit hash
 *** @:author@ -- commit author

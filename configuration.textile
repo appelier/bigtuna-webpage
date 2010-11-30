@@ -7,9 +7,9 @@ h2. Setting up project
 On the homepage, click "New project" on the menu.
 
 * **Name** should be a globally unique project name like "My Project master"
-* **Steps** newline-separated build steps; see "steps section":#steps for more details
-* **Vcs type** version control software you are using. Git is the only choice now, but you can "contribute with your own VCS handler":extending.html#vcs
-* **Vcs source** the source to version control repository. Read the "VCS section":#vcs for info
+* **Steps** newline-separated build steps; see the "steps section":#steps for more details
+* **Vcs type** version control software you are using. Git is the only choice for now, but you can "contribute with your own VCS handler":extending.html#vcs
+* **Vcs source** the source to the version control repository. Read the "VCS section":#vcs for info
 * **Vcs branch** the branch to work on
 * **Max builds** BigTuna will keep only latest _max_builds_ builds (default: 10)
 * **Hooks** Connect various hooks to project builder. See "hooks section":#hooks for more information
@@ -23,14 +23,13 @@ bc. bundle install --path=%project_dir%/bundle --deployment
 cp /project/shared/database.yml.sample %build_dir%/config/database.yml
 bundle exec rake
 
-Please note the @%build_dir%@ and @%project_dir%@ special variables. If used in step, they will be replaced with appropriate paths.
+Please note that @%build_dir%@ and @%project_dir%@ are special variables. If used in a step, they will be replaced with appropriate paths.
 
-p(tip). When building web app, ensure your production data is safe. Use separate @database.yml@ config file with only test environment entry. That way you'll make sure other databases are not accessed during build process.
+p(tip). When building a web app, ensure your production data is safe. Use separate @database.yml@ config file with only test environment entry as an extra precaution. That way you'll make sure other databases aren't accessed during the build process.
 
 h3(#vcs). Version Control
 
-**VCS Source** is a path to your repository. It can either be a local path (like @/my/git/path@) if your repository is locally visible by BigTuna app, or remote entry (like @your.host:repo.git@). In both cases it _has to be accessible_ by the user which runs your BigTuna application.
-The remote entry will probably require a passwordless login, so an @id_{r|d}sa.pub@ key has to be present on the remote site.
+**VCS Source** is the path to your repository. It can either be a local path (like @/my/git/path@) if your repository is locally visible by BigTuna app, or a remote entry (like @your.host:repo.git@). In both cases it __has to be accessible__ by the user which runs your BigTuna application. A remote entry will probably require a passwordless login, so an @id_{r|d}sa.pub@ key has to be present on the remote site.
 
 h3(#hooks). Hooks
 

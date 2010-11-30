@@ -2,9 +2,10 @@
 layout: default
 title: About us
 ---
-h2. Who are we?
 
-We are two Polish developers: Antek and Michal.
+h2. Who's behind all this?
+
+"BigTuna":http://bigtuna.appelier.com has been designed and coded by "Michal Bugno":http://twitter.com/michalbuno and "Antek Piechnik":http://twitter.com/antekpiechnik, two "Ruby":http://www.ruby-lang.org/en/ developers from "Krakow, Poland":http://en.wikipedia.org/wiki/Krak%C3%B3w
 
 h2. Want to support the work?
 
