@@ -4,7 +4,7 @@ title: Configuration
 ---
 h2. Setting up project
 
-Go to BigTuna root. Click "New project" link on the menu.
+On the homepage, click "New project" on the menu.
 
 * **Name** should be a globally unique project name like "My Project master"
 * **Steps** newline-separated build steps; see "steps section":#steps for more details

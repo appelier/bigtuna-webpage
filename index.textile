@@ -4,19 +4,19 @@ title: Continuous Integration
 ---
 h2. What is BigTuna?
 
-BigTuna is continuous integration software. "Martin Fowler's page":http://www.martinfowler.com/articles/continuousIntegration.html describes what is continuous integration.
+BigTuna is continuous integration software. Be sure to check out "Martin Fowler's page":http://www.martinfowler.com/articles/continuousIntegration.html to find out what continuous integration is.
 
 h2. Why use BigTuna and not "other ci software"?
 
-There are other similar projects, but in our opinion none of them is good enough. BigTuna aims at simplicity but not for sake of usability. For example we allow multiple projects in one BigTuna instance, as opposed to __CIJoe__. It is also designed to be extendible to certain extent.
+There are other similar projects, but in our opinion none of them is good enough. BigTuna aims at simplicity but not for the sake of usability. For example we allow multiple projects in one BigTuna instance, as opposed to "CIJoe":https://github.com/defunkt/cijoe. It is also designed to be extendible to a certain extent.
 
-BigTuna tries to be project--agnostic, meaning you can build anything that consists of shell commands and returns 0 exit code on success.
+BigTuna tries to be project--agnostic, meaning you can build basically anything that's tested with shell commands and returns a 0 exit code on success.
 
 h2. Installation
 
-BigTuna is built ontop of Rails 3 framework. Currently it's been tested with Postgres as database backend, but the database scheme is quite simple and there should be no problems running it on SQLite.
+BigTuna is built on top of the Rails 3 framework. Currently it is using Postgres as a database backend, but the database schema is quite simple and there should be no problems running it e.g. on SQLite.
 
-For simple development setup, go with standard Rails procedure.
+For simple development setup, go with the standard Rails procedure.
 
 bc. git clone git@github.com:appelier/bigtuna.git
 rake db:schema:load

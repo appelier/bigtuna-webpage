@@ -4,19 +4,19 @@ title: Installation
 ---
 h2. Deploying
 
-BigTuna comes with @config/deploy.rb.sample@ file to use it with Capistrano. It will help you maintain your BigTuna installation and update it without problems.
+BigTuna comes with a @config/deploy.rb.sample@ file to use it with Capistrano. It should help you maintain your BigTuna installation and update it without any issues.
 
 The file itself is a standard Capistrano deploy file but it adds few tasks to ensure your BigTuna works out of the box after redeploying.
 
 bc. after "deploy:finalize_update", "deploy:symlink_configs"
 before "deploy:restart", "deploy:bootstrap"
 
-@deploy:symlink_configs@ task updates your config files and shared build directory which BigTuna will use to keep its builds.
-@deploy:bootstrap@ migrates database and restarts the delayed job runner so that it works with the latest code
+@deploy:symlink_configs@ task updates your config files and the shared build directory which BigTuna will use to keep its builds.
+@deploy:bootstrap@ migrates the database and restarts the delayed job runner so that it works with the latest codebase
 
 h2(#nginx). Setting up BigTuna with Nginx and Passenger
 
-We assume you have your Nginx instance set up, what you need now is a @server@ entry.
+We assume you have your "Nginx":http://nginx.org/ instance set up, what you need now is a @server@ entry.
 
 bc. server {
   listen 80;
@@ -25,4 +25,4 @@ bc. server {
   passenger_enabled on;
 }
 
-After installing read the "configuration section":configuration.html.
+After you're done, read the "configuration section":configuration.html.
