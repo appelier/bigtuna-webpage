@@ -45,3 +45,15 @@ Hooks are small code parts that can be executed on various project actions. Curr
 Currently there is a @Mailer@ hook available, which allows you to send emails to specified recipients.
 
 If you would like to contribute learn "how to write your own hook":contributing.html#hook
+
+h2. Read--only mode
+
+BigTuna can work in read--only mode allowing only to view projects and builds.  You can enable it by passing @BIGTUNA_READONLY=1@ env variable while starting server. Also, there is a configuration file where you can enable this per--environment
+
+bc. # config/bigtuna.yml
+test:
+  read_only: false
+production:
+  read_only: true
+
+The environment variable has a higher priority. By default the read--only option is disabled.
