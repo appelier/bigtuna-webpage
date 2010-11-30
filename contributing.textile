@@ -2,9 +2,14 @@
 layout: default
 title: Extending
 ---
+
+h2. Contributing
+
+The source code of "BigTuna":http://bigtuna.appelier.com is available on "Github":http://github.com/appelier/bigtuna. If you have any ideas for features and/or patches or would somehow like to contribute, go ahead, fork it, implement (write tests!) and send us a pull request. We will gladly merge it.
+
 h2(#vcs). VCS
 
-We now support Git vcs out of the box, but it takes very little effort to write your own vcs support. Please see @extras/big_tuna/vcs/git.rb@, write your own handler and send us a pull request (with tests!). We will gladly merge it.
+We now support Git vcs out of the box, but it takes very little effort to write your own vcs support. Please see @extras/big_tuna/vcs/git.rb@, write your own handler and send us a pull request on "Github":http://github.com/appelier/bigtuna
 
 # Provide a user--displayed VCS name
 @NAME = "My VCS"@

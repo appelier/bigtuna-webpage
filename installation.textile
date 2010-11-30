@@ -2,6 +2,7 @@
 layout: default
 title: Installation
 ---
+
 h2. Deploying
 
 BigTuna comes with a @config/deploy.rb.sample@ file to use it with Capistrano. It should help you maintain your BigTuna installation and update it without any issues.
