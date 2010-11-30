@@ -6,7 +6,7 @@ h2. What is BigTuna?
 
 BigTuna is continuous integration software. Be sure to check out "Martin Fowler's page":http://www.martinfowler.com/articles/continuousIntegration.html to find out what continuous integration is.
 
-h2. Why use BigTuna and not "other ci software"?
+h2. Why use BigTuna and not other ci software?
 
 There are other similar projects, but in our opinion none of them is good enough. BigTuna aims at simplicity but not for the sake of usability. For example we allow multiple projects in one BigTuna instance, as opposed to "CIJoe":https://github.com/defunkt/cijoe. It is also designed to be extendible to a certain extent.
 
