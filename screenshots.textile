@@ -5,6 +5,8 @@ title: Installation
 
 h2. Screenshots
 
+Here are some of the screenshots for your viewing pleasure:
+
 h3. Dashboard
 
 p(img). !../images/screen_projects.png!
