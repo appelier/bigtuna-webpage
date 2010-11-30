@@ -1,0 +1,22 @@
+---
+layout: default
+title: Installation
+---
+
+h2. Screenshots
+
+h3. Dashboard
+
+p(img). !../images/screen_projects.png!
+
+h3. Project overview
+
+p(img). !../images/screen_builds.png!
+
+h3. Build overview
+
+p(img). !../images/screen_steps.png!
+
+h3. Project edit
+
+p(img). !../images/screen_project_edit.png!
