@@ -15,7 +15,7 @@ If you're interested, there are some "screenshots right here.":screenshots.html
 
 BigTuna tries to be project--agnostic, meaning you can build basically anything that's tested with shell commands and returns a 0 exit code on success.
 
-You can see BigTuna "test itself using it's github repo right here.":http://builder.bigtuna.appelier.com
+You can see BigTuna "watch itself using it's github repo right here.":http://builder.bigtuna.appelier.com
 
 h2. Installation
 
