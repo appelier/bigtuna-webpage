@@ -11,6 +11,8 @@ h2. Why use BigTuna and not other ci software?
 
 There are other similar projects, but in our opinion none of them is good enough. BigTuna aims at simplicity but not for the sake of usability. For example we allow multiple projects in one BigTuna instance, as opposed to "CIJoe":https://github.com/defunkt/cijoe. It is also designed to be extendible to a certain extent.
 
+If you're interested, there are some "screenshots right here.":screenshots.html
+
 BigTuna tries to be project--agnostic, meaning you can build basically anything that's tested with shell commands and returns a 0 exit code on success.
 
 h2. Installation
@@ -19,7 +21,7 @@ BigTuna is built on top of the Rails 3 framework. Currently it is using "SQLite3
 
 For simple development setup, go with the standard Rails procedure.
 
-bc. git clone git@github.com:appelier/bigtuna.git
+bc. git clone git://github.com/appelier/bigtuna.git
 rake db:schema:load
 rails s
 
