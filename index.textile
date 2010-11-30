@@ -14,7 +14,7 @@ BigTuna tries to be project--agnostic, meaning you can build basically anything 
 
 h2. Installation
 
-BigTuna is built on top of the Rails 3 framework. Currently it is using Postgres as a database backend, but the database schema is quite simple and there should be no problems running it e.g. on SQLite.
+BigTuna is built on top of the Rails 3 framework. Currently it is using "SQLite3":http://www.sqlite.org/ as a database backend, but since the database schema is quite simple, there should be no problems running it e.g. on "PostgreSQL":http://www.postgresql.org/.
 
 For simple development setup, go with the standard Rails procedure.
 
