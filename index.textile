@@ -15,6 +15,8 @@ If you're interested, there are some "screenshots right here.":screenshots.html
 
 BigTuna tries to be project--agnostic, meaning you can build basically anything that's tested with shell commands and returns a 0 exit code on success.
 
+You can see BigTuna test itself using it's github repo right here: "builder.bigtuna.appelier.com":http://builder.bigtuna.appelier.com/
+
 h2. Installation
 
 BigTuna is built on top of the Rails 3 framework. Currently it is using "SQLite3":http://www.sqlite.org/ as a database backend, but since the database schema is quite simple, there should be no problems running it e.g. on "PostgreSQL":http://www.postgresql.org/.
