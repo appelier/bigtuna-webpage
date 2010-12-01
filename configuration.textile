@@ -46,14 +46,25 @@ Currently there is a @Mailer@ hook available, which allows you to send emails to
 
 If you would like to contribute learn "how to write your own hook":contributing.html#hook
 
-h2. Read--only mode
+h2. bigtuna.yml
 
-BigTuna can work in read--only mode allowing only to view projects and builds.  You can enable it by passing @BIGTUNA_READONLY=1@ env variable while starting server. Also, there is a configuration file where you can enable this per--environment
+BigTuna has few configuration options which can be set up in @config/bigtuna.yml@ file.
+
 
 bc. # config/bigtuna.yml
 test:
   read_only: false
+  github_secure: "mytoken"
 production:
   read_only: true
 
+h3. Read--only mode
+
+We can work in read--only mode allowing only to view projects and builds.  You can enable it by passing @BIGTUNA_READONLY=1@ env variable while starting server. Also, there is a @read_only@ configuration entry which you can set to boolean value.
+
 The environment variable has a higher priority. By default the read--only option is disabled.
+
+
+h3. GitHub post--receive hook
+
+You can set up @github_secure@ token for BigTuna. Then in you GitHub project config set up post--receive hook to @big.tuna.host/hooks/build/github/:secure@ and your projects will build automatically based on repository url and branch name. By default this is disabled as token is not set.
