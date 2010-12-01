@@ -36,8 +36,8 @@ Currently there is a @Mailer@ hook for you. If you want support for custom servi
 If your hook requires configuration you can create @hooks/NAME/_form.html.haml@ partial with various config fields. Those fields should have their names set to @configuration[field_name]@. They will be stored as Hash in hook config.
 
 # Define methods you need
-** @self.build_passed(build, config)@
-** @self.build_fixed(build, config)@
-** @self.build_still_fails(build, config)@
-** @self.build_finished(build, config)@
-** @self.build_failed(build, config)@
+** @build_passed(build, config)@
+** @build_fixed(build, config)@
+** @build_still_fails(build, config)@
+** @build_finished(build, config)@
+** @build_failed(build, config)@
