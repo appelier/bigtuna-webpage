@@ -15,6 +15,12 @@ On the homepage, click "New project" on the menu.
 * **Hooks** Connect various hooks to project builder. See "hooks section":#hooks for more information
 * **Hook name** Set up unique hook name and POST to @http://bigtuna.domain/hooks/build/:name@ to build the app
 
+Please note, that BigTuna uses DelayedJob as a backend. This means that your jobs are ran by an external DelayedJob process. This process is maintained by @script/delayed_job@ file.
+
+bc. RAILS_ENV=production ./script/delayed_job start
+
+Visit "Delayed Job's GitHub page":https://github.com/collectiveidea/delayed_job for more information.
+
 h3(#steps). Steps
 
 Steps should be newline--separated shell commands which will be executed in order by our builder. Sample Rails 3 step entry might look like this:
