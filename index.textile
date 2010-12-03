@@ -24,6 +24,7 @@ BigTuna is built on top of the Rails 3 framework. Currently it is using "SQLite3
 For simple development setup, go with the standard Rails procedure.
 
 bc. git clone git://github.com/appelier/bigtuna.git
+bundle install
 # create config/database.yml
 rake db:schema:load
 ./script/delayed_job start # delayed job runner
