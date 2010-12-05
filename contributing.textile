@@ -9,7 +9,7 @@ The source code of "BigTuna":http://bigtuna.appelier.com is available on "Github
 
 h2(#vcs). VCS
 
-We now support Git vcs out of the box, but it takes very little effort to write your own vcs support. Please see @extras/big_tuna/vcs/git.rb@, write your own handler and send us a pull request on "Github":http://github.com/appelier/bigtuna
+We now support Git and Mercurial VCSes out of the box, but it takes very little effort to write your own vcs support. Please see @extras/big_tuna/vcs/@, write your own handler and send us a pull request on "Github":http://github.com/appelier/bigtuna
 
 # Provide a user--displayed VCS name
 @NAME = "My VCS"@
@@ -28,7 +28,7 @@ We now support Git vcs out of the box, but it takes very little effort to write 
 
 h2(#hook). Hooks
 
-Currently there is a @Mailer@ hook for you. If you want support for custom services please check @extras/big_tuna/hooks/mailer.rb@ and create a new hook based on it.
+Currently there is a @Mailer@ and @xmpp@ hook for you. If you want support for custom services please check @extras/big_tuna/hooks/@ and create a new hook based on existing hooks.
 
 # Provide a unique database--safe hook name
 @NAME = "mailer"@

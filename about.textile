@@ -7,6 +7,14 @@ h2. Who's behind all this?
 
 "BigTuna":http://bigtuna.appelier.com has been designed and coded by "Michal Bugno":http://twitter.com/michalbugno and "Antek Piechnik":http://twitter.com/antekpiechnik, two "Ruby":http://www.ruby-lang.org/en/ developers from "Krakow, Poland":http://en.wikipedia.org/wiki/Krak%C3%B3w
 
+h3. Contributors
+
+Big thanks goes to a bunch of people who contributed with additional features (alphabetical order)
+
+* "flamontagne":https://github.com/flamontagne -- xmpp hook
+* "knoopx":https://github.com/knoopx -- bugfixes
+* "unsay":https://github.com/unsay -- Mercurial support
+
 h2. Want to support the work?
 
 Donate using PayPal to acknowledge our work.
