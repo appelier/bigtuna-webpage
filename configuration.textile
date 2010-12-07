@@ -7,13 +7,17 @@ h2. Setting up project
 On the homepage, click "New project" on the menu.
 
 * **Name** should be a globally unique project name like "My Project master"
-* **Steps** newline-separated build steps; see the "steps section":#steps for more details
 * **Vcs type** version control software you are using. Git is the only choice for now, but you can "contribute with your own VCS handler":contributing.html#vcs
 * **Vcs source** the source to the version control repository. Read the "VCS section":#vcs for info
 * **Vcs branch** the branch to work on
 * **Max builds** BigTuna will keep only latest _max_builds_ builds (default: 10)
 * **Hooks** Connect various hooks to project builder. See "hooks section":#hooks for more information
 * **Hook name** Set up unique hook name and POST to @http://bigtuna.domain/hooks/build/:name@ to build the app
+
+After creating project you will be redirected to edit page, where you can set up various configurations. For example, you can test your project on different Ruby environments, versions, platforms, etc.
+
+* **Name** Name for a new configuration
+* **Steps** Newline-separated build steps; see the "steps section":#steps for more details
 
 Please note, that BigTuna uses DelayedJob as a backend. This means that your jobs are ran by an external DelayedJob process. This process is maintained by @script/delayed_job@ file.
 
