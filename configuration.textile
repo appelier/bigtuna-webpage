@@ -67,13 +67,17 @@ test:
   github_secure: "mytoken"
 production:
   read_only: true
+  url_host: "bigtuna.yourdomain.com"
+
+h3. Host url
+
+Set your host for links to work (mandatory in production!)
 
 h3. Read--only mode
 
 We can work in read--only mode allowing only to view projects and builds.  You can enable it by passing @BIGTUNA_READONLY=1@ env variable while starting server. Also, there is a @read_only@ configuration entry which you can set to boolean value.
 
 The environment variable has a higher priority. By default the read--only option is disabled.
-
 
 h3. GitHub post--receive hook
 
