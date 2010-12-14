@@ -11,10 +11,11 @@ h3. Contributors
 
 Big thanks goes to a bunch of people who contributed with additional features (alphabetical order)
 
+* "dbalatero":https://github.com/dbalatero -- Campfire hook, bugfixes
 * "flamontagne":https://github.com/flamontagne -- xmpp hook
+* "georgboe":https://github.com/georgboe -- bugfixes
 * "knoopx":https://github.com/knoopx -- bugfixes
 * "unsay":https://github.com/unsay -- Mercurial support
-* "dbalatero":https://github.com/dbalatero -- Campfire hook, bugfixes
 
 h2. Want to support the work?
 
