@@ -1,0 +1,11 @@
+---
+layout: default
+title: Release log
+---
+h2. **0.1.1** (17 December, 2010)
+ * Git support for versions that didn't support @clone --branch@ option (upto 1.6.4)
+ * IRC/Campfire build notifications
+ * Bugfixes for Ruby 1.9.x versions and usability fixes
+
+h2. **0.1.0** (9 December, 2010)
+ * Initial version
