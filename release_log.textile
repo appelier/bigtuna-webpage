@@ -2,6 +2,11 @@
 layout: default
 title: Release log
 ---
+h2. **0.1.2** (18 January, 2011)
+ * Bugfix for @git --format@
+ * SVN support (not tested)
+ * Other bugfixes
+
 h2. **0.1.1** (17 December, 2010)
  * Git support for versions that didn't support @clone --branch@ option (upto 1.6.4)
  * IRC/Campfire build notifications
