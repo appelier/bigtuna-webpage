@@ -4,6 +4,7 @@ title: Release log
 ---
 h2. **0.1.2** (18 January, 2011)
  * Bugfix for @git --format@
+ * Auto--reloading the project panel
  * SVN support (not tested)
  * Other bugfixes
 
