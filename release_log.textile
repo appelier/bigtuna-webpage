@@ -3,8 +3,13 @@ layout: default
 title: Release log
 ---
 
+h2. **0.1.4** (13 April, 2011)
+ * Shared environment commands added
+ * Incremental update strategy in Git
+ * Automatic Gemfile discovery
+
 h2. **0.1.3** (20 February, 2011)
- * better handling of Bundler--related apps
+ * Better handling of Bundler--related apps
  * Notifo and Talker integration
 
 h2. **0.1.2** (18 January, 2011)
